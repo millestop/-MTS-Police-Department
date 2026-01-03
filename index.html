@@ -11,18 +11,22 @@ body {
   font-family: Arial, sans-serif;
   background: #0f0f1a;
   color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .header {
   background: linear-gradient(135deg, #6a00ff, #8f4dff);
-  padding: 15px;
+  padding: 15px 10px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 .header img {
   width: 90px;
   height: auto;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .header h1 {
@@ -42,6 +46,7 @@ body {
   padding: 10px;
   justify-content: center;
   background: #141428;
+  flex-shrink: 0;
 }
 
 .buttons button {
@@ -62,10 +67,11 @@ body {
 }
 
 iframe {
+  flex: 1 1 auto;
   width: 100%;
-  height: calc(100vh - 230px);
   border: none;
   background: #000;
+  min-height: 200px;
 }
 </style>
 </head>
